@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Consumo de Água</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #191a1b; /* Azul claro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff; /* Branco */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 2px solid #b0bec5; /* Cinza azulado */
+    }
+    h1 {
+      color: #37474f; /* Azul acinzentado escuro */
+    }
+    p {
+      font-size: 1.1em;
+      color: #607d8b; /* Azul acinzentado médio */
+    }
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #098fce; /* Azul acinzentado escuro */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #455a64; /* Azul acinzentado mais escuro */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Consumo de Água</h1>
+    <p>Esta calculadora ajuda você a descobrir a quantidade ideal de água que deve consumir diariamente com base no seu peso.</p>
+    <button onclick="openPopup()">Abrir Calculadora</button>
+  </div>
+
+  <script>
+    function openPopup() {
+      const popup = window.open('calculadora.html', 'popup', 'width=400,height=400');
+      if (!popup) {
+        alert('Por favor, habilite popups no navegador.');
+      }
+    }
+  </script>
+</body>
+</html>
